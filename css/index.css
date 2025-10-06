@@ -1,0 +1,80 @@
+/*Version mobile */
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.background {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    top: 15vh;
+
+}
+
+img {
+    border-radius: 35px;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 40%;
+    width: 85%;
+    height: 55px;
+    background-color: antiquewhite;
+    border-radius: 25px;
+}
+
+.filtergrid {
+    display: grid;
+    grid-template-columns: 35% 5% 35% 5% 25%;
+    width: 90%;
+}
+.filtergrid > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    background-color: blue;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.hv {
+    border-left: 1px solid rgb(0, 0, 0);
+    height: 35px;
+}
+
+.jobGrid {
+    position: absolute;
+    top: 50vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(9, 1fr);
+    width: 90%;
+    height: 100%;
+}
+
+.jobGrid > div{
+    height: 15vh;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    background-color: antiquewhite;
+}
