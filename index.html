@@ -6,37 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Document</title>
 </head>
 
 <body>
-    <nav>
-        <div class="navbar">
-            <div class="container nav-container">
-                <h1>Navbar</h1>
-                <input class="checkbox" type="checkbox" name="" id="" />
-                <div class="hamburger-lines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                </div>
-                <div class="logo">
-                </div>
-                <div class="menu-items">
-                    <li><a href="#">test</a></li>
-                    <li><a href="#">test</a></li>
-                    <li><a href="#">test</a></li>
-                    <li><a href="#">test</a></li>
-                    <li><a href="#">test</a></li>
-                </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="container-center">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="Global Jobs" width="80" height="80">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
         </div>
     </nav>
-    <div class="container">
-        <div class="background">
-            <img src="img/city.jpg" alt="" width="90%">
-        </div>
-        <div class="filter">
+    <div class="container w-80 d-flex flex-column justify-content-center align-items-center">
+        <div class="background background w-80 d-flex flex-column justify-content-center align-items-center">
+                    <div class="filter">
             <div class="filtergrid">
                 <div>test</div>
                 <div>
@@ -47,23 +65,44 @@
                     <hr class="hv">
                 </div>
                 <div>
-                    <div class="search">
-                    </div>
+                    <div class="search"></div>
                 </div>
             </div>
         </div>
-        <div class="jobGrid">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        </div>
+        <div class="grid-container">
+            <div class="jobGrid">
+                <div class="announce-Card p-3">
+                    <div class="announce">
+                        <h3>Developpeur WEB</h3>
+                        <h4>Google INC.</h4>
+                        <p>CDI - 4 mois</p>
+                    </div>
+                    <div class="favAndCheck">
+                        <div>
+                            <img src="img/bookmark.png" width="25px">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                        <img src="img/check-mark.png" alt="" srcset="">
+                        <article>Vu</article>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="detail-jobs">
+                <div class="detailsjobsGrid"></div>
+            </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="./script/index.js"></script>
 </body>
 
 </html>
